@@ -13,7 +13,7 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    background-color: var(--color2);
+    background-color: var(--color1);
 }
 
 main {
@@ -24,10 +24,26 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
-section {
-    background-color: var(--color1);
-    max-width: 80%;
-    display: flex;
+
+section.top {
+    max-width: 75%;
+    padding-top: var(--gutter);
+
+}
+
+section.middle img { 
+    max-width: 75%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--gutter);
+
+}
+
+section.bottom {
+    max-width: 100%;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -35,7 +51,12 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+}
+
+main.middle.img {
+    max-width: 75%;
+    min-width: none;
+    flex direction: grid-row: ;
 }
 
 header {
