@@ -8,8 +8,40 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 1) **Make a drawing of your app. Simple "wireframes"** 
 1) **Look at the drawing and name the HTML elements you'll need to realize your vision**
+-H1 for title
+(options div)
+-Options -options
+(image div)
+-img   -img
+slogan input (button)
+slogan output (section)
 1) **Look at the drawing and imagine using the app. What _state_ do you need to track?** 
+-div for user choice (climate)
+-div for user choice (style)
+-div for slogan input
+
 1) **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")** 
+div fo main 
+  div for choices
+    (label)
+    MAJOR CITY
+    (select (ID:major city))
+      Los Angeles (value)
+      Santa Fe (value)
+      New York (value)
+      (label)
+    (select (ID:medium))
+      Painting(value)
+      Sculpture(value)
+      Printmaking(value)
+      (select (ID: side Job))
+      server(value)
+      barista(value)
+      dog walker(value)
+      (label)
+/div
+(label)
+
 1) **Once we know _why_ we need each element, think about how to implement the "Why" as a "How" (i.e., `resultsEl.textContent = newResults`)**
 1) **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change? Does any DOM update?**
 1) **Think about how to validate each of your features according to a Definition of Done. (Hint: console.log usually helps here.)**
@@ -23,4 +55,4 @@ Additional considerations:
   - What arrays might you need? 
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
-- Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+- Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
