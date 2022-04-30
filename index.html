@@ -9,62 +9,76 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>City Planner</title>
 </head>
 
 <body>
     <header>
         <div class="gutter-right logo">
-            <img src="./assets/big-logo.png" />
+            <img src="./assets/icons/artist.png" />
         </div>
     </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
+        <section class="top">
+            <div id="instructions">
+                <img class="icon" src="./assets/icons/topImage.png" />
+                <h2>Choose your path!</h2>
+                <p>
+                    Congrats art school grad! <br>
+                    Now it's time to decide where to go from here. 
+                </p>
+            </div>
+        </section>
+        <section class="middle">
+                <di class="displays">
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
+                    <div id="city-display" >
+                        <img class="icon" src="./assets/icons/move.png" />
+                        <select id="city-dropdown">
+                            <option value="ny">New York</option>
+                            <option value="la">Los Angeles</option>
+                            <option value="sf">Santa Fe</option>
+                        </select>
+                        <!-- <img src="./assets/cities/ny.jpg" /> -->
+                        <div id="city" class="cityPic"></div>
+                    </div>
 
+                    <div id="medium-display">
+                        <img class="icon" src="./assets/icons/medium.png" />
+                        <select id="medium-dropdown">
+                            <option value="plastics">Plastics</option>
+                            <option value="performance">Performance Art</option>
+                            <option value="design">Graphic Design</option>
+                        </select>
+                        <!-- <img src="./assets/mediums/plastics.jpg" /> -->
+                        <div id="medium" class="mediumPic"></div>
+                    </div>
+
+                    <div id="hustle-display">
+                        <img class="icon" src="./assets/icons/hustle.png" />
+                        <select id="hustle-dropdown">
+                            <option value="barista">Barista</option>
+                            <option value="walker">Dog Walking</option>
+                            <option value="delivery">Deliver Goods</option>
+                        </select>
+                        <!-- <img src="./assets/side hustle/barista.jpg" /> -->
+                        <div id="hustle"class="hustlePic"></div>
+                    </div>
+                    <br>
+                    <div id="soundtrack">
+                        <p>Name the soundtrack for your new life?</p>
+                    </div>
+                </div>
+            </div>
+        </section>    
+
+        <section class="bottom">
+            <input type="text" id="theme" />
+            <button id="save-button">Document</button>
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2022 Alchemy Code Lab</div>
     </footer>
 
     <script type="module" src="./app.js"></script>
